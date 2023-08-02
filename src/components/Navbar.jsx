@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { Stack } from '@mui/material'
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <div className='text-white'>Navbar</div>
   )
 }
 
