@@ -4,7 +4,14 @@ import React, { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Sidebar from "./Sidebar";
 import Videos from './Videos'
+import { fetchFromAPI } from "../utils/fetchFromApi";
 const Feed = () => {
+    const
+    useEffect(() => {
+      fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
+      //check api docs 
+      //searches for the selected category
+    },[])
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
