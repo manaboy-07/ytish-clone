@@ -20,6 +20,26 @@ const Feed = () => {
           Copyright 2023 manaFilms
         </Typography>
       </Box>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+        {/* flex 2 makes it take more space then the sidebar */}
+        <Typography
+          variant='h4'
+          fontWeight={"bold"}
+          mb={2}
+          sx={{
+            color: "white",
+          }}>
+          New
+          <span
+            style={{
+              color: "#f31503",
+            }}>
+            Videos
+          </span>
+         
+        </Typography>
+        <Videos />
+      </Box>
     </Stack>
   );
 };
