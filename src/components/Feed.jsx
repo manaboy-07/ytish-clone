@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Sidebar from "./Sidebar";
+import Videos from './Videos'
 const Feed = () => {
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
@@ -38,7 +39,7 @@ const Feed = () => {
           </span>
          
         </Typography>
-        <Videos />
+        <Videos videos={[]}/>
       </Box>
     </Stack>
   );
