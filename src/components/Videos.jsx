@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Videos = ({videos}) => {
-    console.log(vidoes)
+    console.log(videos)
   return (
     <div>
       
