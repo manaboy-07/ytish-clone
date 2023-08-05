@@ -4,13 +4,19 @@ import React from "react";
 import { Typography, Box, Card, CardContent, CardMedia } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import { demoProfilePicture } from "../utils/constants";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 const ChannelCard = ({ channelDetail }) => {
   return (
     <Box
       sx={{
         boxShadow: "none",
         borderRadius: "20px",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '326px',
+        margin:'auto',
+        width: {xs:'356px', md: '320px'}
       }}>
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent
@@ -46,9 +52,9 @@ const ChannelCard = ({ channelDetail }) => {
             />
           </Typography>
 
-          {channedDetail?.statistics?.subscriberCount && (
+          {channelDetail?.statistics?.subscriberCount && (
             <Typography>
-                {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()}
+                {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers
                 {/* that gives a human readable smth */}
             </Typography>
           )}
