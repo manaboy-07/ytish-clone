@@ -12,7 +12,7 @@ const Videos = ({videos}) => {
                 {/* to understand check the console  */}
                 {/* some return video others return a channel */}
                 {item.id.videoId && <VideoCard video={item}/>}
-                {/* {item.id.channelId && <ChannelCard channelDetail={item}/>} */}
+                {item.id.channelId && <ChannelCard channelDetail={item}/>}
             </Box>
         ))
       }
