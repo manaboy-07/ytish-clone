@@ -17,7 +17,7 @@ const VideoCard = ({
     snippet,
   },
 }) => {
-  console.log(videoId, snippet);
+  // console.log(videoId, snippet);
   //destructuring to get the id
   // console.log(video)
   return (
