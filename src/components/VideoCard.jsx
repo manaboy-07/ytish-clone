@@ -22,14 +22,18 @@ const VideoCard = ({
   // console.log(video)
   return (
     <Card sx={{
-        width:{md:'320px', xs:'100%'},
+        width:{md:'320px', xs:'100%', sm:'350px'},
         borderRadius: 0,
         boxShadow: 'none'    }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           alt={snippet?.title}
           image={snippet?.thumbnails?.high?.url}
-          sx={{ width: 358, height: 180 }}
+          sx={{ width: {
+            xs:'100%',
+            sm: '350px',
+            md: '320px'
+          }, height: 180 }}
         />
         {/* those ?. means if it exits or else leave as undefined */}
       </Link>
